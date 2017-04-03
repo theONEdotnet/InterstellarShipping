@@ -1,0 +1,297 @@
+<style>
+.modal.modal-wide .modal-dialog {
+        width: 95%;
+      }
+.modal-wide .modal-body {
+        overflow-y: auto;
+        
+        width: 1110px;
+        height: auto;
+      }
+      
+.sidebar {
+        padding-left: 15px;
+      }
+      
+      
+  
+.rounded-circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display:block;
+}
+
+.navbar-transparent {
+    border-bottom: 1px solid #333 !important;
+    background-color: #ffffff !important;
+}
+  
+</style>
+    
+<body>
+
+<div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+          <ul class="nav nav-pills flex-column">
+            <li class="text-center" style="padding-bottom: 5px;">
+              <p class="text-center"><%= image_tag "jr-shipper.jpg", size:"50%", :class => "img-fluid rounded-circle" %></p>
+              <p>J.R.<br>
+                Ship Pilot<br>
+                <strong>Class: Starship Master</strong><br>
+                <small>Email: <a href="mailto:JR@InterStellarShipping.com">JR@InterStellarShipping.com</a></small>
+              </p>
+            </li>
+            
+            <li class="nav-item">
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg">Train my A.I. Co-Pilot &nbsp;<%= image_tag "watson-button-icon.png", size: "50x50" %></button>
+            </li>
+            
+            <br>
+            <hr class="muted">
+            <br>
+            <li class="nav-item">
+            <h3>PILOT PROFILE</h3>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Current Assignment:&nbsp;<strong>#1001</strong><span class="sr-only"></span></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Performance Rating:&nbsp;<strong>10</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Total No. of Trips:&nbsp;<strong>7</strong></a>
+            </li>
+          </ul>
+          
+          <hr class="muted">
+
+          <ul class="nav nav-pills flex-column">
+            <p>CREDENTIALS</p>
+            <li class="nav-item">
+              <a class="nav-link" href="#">- starship pilot</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">- astronavigator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">- astrophysicist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">- neurophysicist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">- diplomat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">- design philosopher</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">- zen master</a>
+            </li>
+          </ul>
+          
+          <hr class="muted">
+
+          <ul class="nav nav-pills flex-column">
+            <p>SHIPS LEASED</p>
+            <li class="nav-item">
+              <a class="nav-link" href="#">- Enterprise-D / commerce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">- Quad-E (1)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">- Quad-E (2)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">- Quad-E (3)</a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+          
+          <!-- Large modal -->
+          <div class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content text-center">
+                
+                  <!--The main car dashboard SVG-->
+                  <div class="img-responsive">
+                  <iframe width="100%" height="600px" src="https://conversation-try-buy.mybluemix.net/" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div><!-- End Large modal -->
+
+          <section class="row text-center placeholders">
+            <div class="col-6 col-sm-2 placeholder">
+              <%= image_tag "galaxy-ship.png", size:"250x250", :class => "img-fluid rounded-circle" %>
+              <h4>Galaxy Class<br><small>Container Starship</small></h4>
+              <div class="text-muted">Capacity: 100,000 TEUs</div>
+              <div class="text-muted"><strong>(1) Assigned To:<br> J.R.</strong></div>
+            </div>
+            <div class="col-6 col-sm-2 placeholder">
+              <%= image_tag "18000.png", size:"250x250", :class => "img-fluid rounded-circle" %>
+              <h4>Quadruple-E<br><small>Container Ship</small></h4>
+              <span class="text-muted">Capacity: 32,000 TEUs</span>
+              <div class="text-muted"><strong>(3) Assigned To:<br> J.R.</strong></div>
+            </div>
+            <div class="col-6 col-sm-2 placeholder">
+              <%= image_tag "18000.png", size:"250x250", :class => "rounded-circle" %>
+              <h4>Triple-E Class<br><small>Container Ship</small></h4>
+              <div class="text-muted">Capacity: 18,000 TEUs</div>
+              <div class="text-muted">Available</div>
+            </div>
+            <div class="col-6 col-sm-2 placeholder">
+              <%= image_tag "15500.png", size:"250x250", :class => "rounded-circle" %>
+              <h4>Emma Class<br><small>Container Ship</small></h4>
+              <span class="text-muted">Capacity: 15,500 TEUs</span>
+              <div class="text-muted">Available</div>
+            </div>
+            <div class="col-6 col-sm-2 placeholder">
+              <%= image_tag "8100.png", size:"250x250", :class => "rounded-circle" %>
+              <h4>Sovereign Class<br><small>Container Ship</small></h4>
+              <span class="text-muted">Capacity: 8,100 TEUs</span>
+              <div class="text-muted">Available</div>
+            </div>
+            <div class="col-6 col-sm-2 placeholder">
+              <%= image_tag "7100.png", size:"250x250", :class => "rounded-circle" %>
+              <h4>Regina Class<br><small>Container Ship</small></h4>
+              <span class="text-muted">Capacity: 7,100 TEUs</span>
+              <div class="text-muted">Available</div>
+            </div>
+          </section>
+          <div id="jobs"></div>
+
+          
+          <hr>
+          <h2>Shipping Assignments</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Job No.</th>
+                  <th>Job Type</th>
+                  <th>No. of <br>Containers</th>
+                  <th>Cargo<br>Origin</th>
+                  <th>Cargo<br>Destination</th>
+                  <th>Job Status</th>
+                  <th>Ship Pilot</th>
+                  <th>Payment<br>Amount<br>($ million USD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1001<sup>*</sup></td>
+                  <td><a href="#">
+                    <strong>planet-to-planet<sup>*</sup></strong></a></td>
+                  <td>80,000</td>
+                  <td>Earth</td>
+                  <td>Talos 4</td>
+                  <td>assigned</td>
+                  <td>Capt.J.R.</td>
+                  <td>$100,000</td>
+                </tr>
+                <tr>
+                  <td>#1001-a</td>
+                  <td><strong>port</strong>-to-hub</td>
+                  <td>80,000</td>
+                  <td>Port of Shanghai</td>
+                  <td>Pacific Space Hub</td>
+                  <td>assigned</td>
+                  <td>Capt.J.R.</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>#1001-b</td>
+                  <td>hub-to-spacedock</td>
+                  <td>80,000</td>
+                  <td>Pacific Space Hub</td>
+                  <td>Spacedock-Alpha</td>
+                  <td>assigned</td>
+                  <td>Capt.J.R.</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>#1001-c</td>
+                  <td>transfer-to-starship</td>
+                  <td>80,000</td>
+                  <td>Spacedock-Alpha</td>
+                  <td>Enterprise</td>
+                  <td>assigned</td>
+                  <td>Capt.J.R.</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>#1001-d</td>
+                  <td>starship flight</td>
+                  <td>80,000</td>
+                  <td>Solar System</td>
+                  <td>Talos System</td>
+                  <td>assigned</td>
+                  <td>Capt.J.R.</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>#1001-e</td>
+                  <td>transfer-to-spacedock</td>
+                  <td>80,000</td>
+                  <td>Enterprise</td>
+                  <td>Spaceport-Theta</td>
+                  <td>assigned</td>
+                  <td>Capt.J.R.</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>#1001-f</td>
+                  <td>spacedock-to-hub</td>
+                  <td>80,000</td>
+                  <td>Spaceport-Theta</td>
+                  <td>Talosian Hub</td>
+                  <td>assigned</td>
+                  <td>Capt.J.R.</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>#1001-g</td>
+                  <td>hub-to-<strong>port</strong></td>
+                  <td>80,000</td>
+                  <td>Talosian Hub</td>
+                  <td>Talosian City Port</td>
+                  <td>assigned</td>
+                  <td>Capt.J.R.</td>
+                  <td>$100,000</td>
+                </tr>
+                
+                <thead>
+                <tr id="totals">
+                  <th>TOTALS</th>
+                  <th></th>
+                  <th>80,000</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th>$200 billion</th>
+                </tr>
+              </thead>
+                
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+  </body>
